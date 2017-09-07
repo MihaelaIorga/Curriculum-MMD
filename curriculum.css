@@ -1,0 +1,99 @@
+main {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                    "hd  hd hd hd"
+                    "ul ul ul ul"
+                    "sec sec sec sec"
+                    "ft ft ft ft";
+                grid-gap: 0.5em;
+}
+
+
+header {
+
+        display: grid;
+        grid-area: hd;
+        border: 1px solid;
+		height: 100PX;
+
+}
+
+.intro {
+        display: grid;
+        grid-area: ul;
+        border: 1px solid;
+        height: 400px;
+        width: 100%;
+
+}
+
+
+section {
+		display: grid;
+		grid-gap: 5px;
+        margin: 30px 30px 30px;;
+		grid-template-columns: repeat(1, 1fr);
+		/* grid-template-columns: repeat(auto-fill, 200px); */
+		grid-auto-rows: 1fr;
+		justify-content: center;
+
+		}
+
+article {
+		border: 1px solid ;
+        border-radius: .5em;
+		height: 200px;
+        background-color: lightskyblue;
+
+		}
+
+.text {
+			grid-column: 1 / -1;
+		}
+
+
+
+.navigation-bar {
+
+    text-align: right;
+    padding: .2em;
+    background-color: lightskyblue;
+    position: fixed;
+    left: 0;
+    right: 0;
+
+
+}
+.logo {
+    display: inline;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    margin-top: 17px;    /* if you want it vertically middle of the navbar. */
+    margin-left: 15px;
+}
+
+    /* if you want it vertically middle of the navbar */
+
+ul li{
+
+    display: inline;
+    font-size: 1.3em;
+    padding-right: 100px;
+
+
+
+}
+li a{
+    text-decoration: none;
+    color:darkslategray;
+
+}
+
+footer{
+        height: 100px;
+        border: 1px solid;
+
+}
