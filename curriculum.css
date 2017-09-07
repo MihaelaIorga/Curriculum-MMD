@@ -1,125 +1,81 @@
-main {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-areas:
-                    "hd  hd hd hd"
-                    "ul ul ul ul"
-                    "h2 h2 h2 h2"
-                    "sec sec sec sec"
-                    "ft ft ft ft";
-                grid-gap: 0.5em;
+body {
+    margin: 0;
 }
 
-
-header {
-
-        display: grid;
-        grid-area: hd;
-		height: 80px;
-        padding: 1.5em;
-        background-color: lightskyblue;
-}
 
 .navBar {
     width: 100%;  /* i'm assuming full width */
-    height: 80px; /* change it to desired width */
-
+    height: 50px; /* change it to desired width */
+    display: inline;
 }
 .logo {
     display: inline-block;
-    vertical-align: top;
-    width: 130px;
-    height: 100px;
+    max-width: 90px;
+    height: auto;
+    padding-top: 10px;
     margin-right: 20px;
     padding-right: 50px;
 }
 .navBar a {
 
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: aliceblue;
-    font-size: 16px;
+    color: #2a2a2a;
+    font-size: 0.8em;
     display: inline-block;
-    padding-top: 10px;
-    padding-right: 50px;
+    padding-right: 20px;
     vertical-align: top;
     margin-right: 20px;
-    line-height: 80px;    /* if you want it vertically middle of the navbar */
+    line-height: 50px;    /* if you want it vertically middle of the navbar */
 }
 
 
 
 
-.intro {
-        background-image: url(images/header.jpg);
-        background-size: cover;
-        opacity: .70;
-        display: grid;
-        grid-area: ul;
-        height: 400px;
-        width: 100%;
+
+.left-btn {
+        background-color: white;
+    color: #0E7DFF;
+    border-radius: 1em;
+    font-size: 0.8em;
+    font-weight: 100;
+    border: none;
+    text-transform:capitalize;
+    width: 90%;
+    height: 4em;
+    margin: 0;
 
 }
 
-h2{
-    font-family: 'Ubuntu', sans-serif;
-    color: #696969;
-    display: grid;
-    grid-area: h2;
-    font-size: 16px;
-    justify-content: center;
-    padding-left: 150px;
-    padding-right: 150px;
-
+.left {
+    display: auto;
+    text-align: center;
 
 }
 
-section {
-		display: grid;
-		grid-gap: 5px;
-        margin: 30px 30px 30px;;
-		grid-template-columns: repeat(1, 1fr);
-		/* grid-template-columns: repeat(auto-fill, 200px); */
-		grid-auto-rows: 1fr;
-		justify-content: center;
-
-		}
-
-article {
-        border-radius: .5em;
-		height: 250px;
-        background-color: lightskyblue;
-        color: aliceblue;
-        display: grid;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-
-		}
 
 .text {
 			grid-column: 1 / -1;
 		}
 
-h1{
-    font-family: 'Ubuntu', sans-serif;
-    color: #696969;
+.extra-info{
+    font-family: 'Raleway', sans-serif;
+    color: #0E7DFF;
     grid-column: 1 / -1;
     text-align: center;
 
 }
 
-.teach{
-
-		display: grid;
-		grid-gap: 5px;
-        margin: 30px 30px 30px;;
-		grid-template-columns: repeat(1, 1fr);
-		/* grid-template-columns: repeat(auto-fill, 200px); */
-		grid-auto-rows: 1fr;
-
+.intro-txt{
+    padding-top: 5em;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    grid-column: 1 / -1;
+    text-align: center;
 
 }
+
+
 .text1 {
         background-color: none;
         border-radius: .5em;
@@ -150,3 +106,90 @@ footer a{
 }
 
 
+@media (min-width: 900px) {
+    main {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                    "hd  hd hd hd"
+                    "ul ul ul ul"
+                    "h2 h2 h2 h2"
+                    "sec sec sec sec"
+                    "ft ft ft ft";
+
+}
+
+
+header {
+
+        display: grid;
+        grid-area: hd;
+		height: 45px;
+        padding: 1.5em;
+        background-color: white;
+}
+
+
+.intro {
+        background-image: url(images/header2.jpg);
+        background-size: cover;
+
+        display: grid;
+        grid-area: ul;
+        height: 400px;
+        width: 100%;
+
+}
+
+.prog-descr{
+    font-family: 'Raleway', sans-serif;
+    color: #2c2c2c;
+    display: grid;
+    grid-area: h2;
+    font-size: 0.8em;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-left: 280px;
+    padding-right: 280px;
+
+
+}
+
+section {
+        margin: 30px 30px 30px;
+            border-radius: .5em;
+		height: 35vh;
+        background-color: #0E7DFF;
+		/* grid-template-columns: repeat(auto-fill, 200px); */
+		justify-content: center;
+
+		}
+
+article {
+    font-family: 'Raleway', sans-serif;
+        color: aliceblue;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+
+		}
+    .teach{
+
+		display: grid;
+		grid-gap: 5px;
+        margin: 30px 30px 30px;;
+		grid-template-columns: repeat(1, 1fr);
+		/* grid-template-columns: repeat(auto-fill, 200px); */
+		grid-auto-rows: 1fr;
+
+
+}
+
+    .sem {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+}
