@@ -16,18 +16,7 @@ body {
     margin-right: 20px;
     padding-right: 50px;
 }
-.navBar a {
 
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    color: #2a2a2a;
-    font-size: 0.8em;
-    display: inline-block;
-    padding-right: 20px;
-    vertical-align: top;
-    margin-right: 20px;
-    line-height: 50px;    /* if you want it vertically middle of the navbar */
-}
 
 
 
@@ -63,6 +52,7 @@ body {
     color: #0E7DFF;
     grid-column: 1 / -1;
     text-align: center;
+    padding-top: 60px;
 
 }
 
@@ -78,33 +68,79 @@ body {
 
 .text1 {
         background-color: none;
-        border-radius: .5em;
-		height: 250px;
-        border: 1px solid black;
+		height: 300px;
 
 
 }
 
+h3{
+    color: #2c2c2c;
+    font-size: 1em;
+    text-align: justify;
+}
+
 p{
-    color: #696969;
+    color: #2c2c2c;
 }
 
 
 footer{
-        background-color: slategrey;
-        height: 150px;
+        background-color: #2c2c2c;
+        height: 100px;
+    grid-area: ft;
+       padding-top: 50px;
+
 
 }
 
 footer a{
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: aliceblue;
-    font-size: 20px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 200;
     display: block;
+    align-content: center;
     text-align: center;
-    padding-top: 20px;
+    line-height: 30px;
+
+
+
 }
 
+
+@media (max-width: 900px) {
+.prog-descr{
+    font-family: 'Raleway', sans-serif;
+    color: #2a2a2a;
+    display: grid;
+    grid-area: h2;
+    font-size: 0.8em;
+    font-weight:400;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+}
+
+    .navBar a {
+        background-color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 0.6em;
+    display: none;
+
+    vertical-align: top;
+    margin-right: 10px;
+    line-height: 50px;    /* if you want it vertically middle of the navbar */
+}
+
+
+}
 
 @media (min-width: 900px) {
     main {
@@ -119,6 +155,35 @@ footer a{
 
 }
 
+.prog-descr{
+    font-family: 'Raleway', sans-serif;
+    color: #2a2a2a;
+    display: grid;
+    grid-area: h2;
+    font-size: 0.8em;
+    font-weight:400;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-left: 280px;
+    padding-right: 280px;
+
+
+}
+
+    .navBar a {
+
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 0.8em;
+    display: inline-block;
+    padding-right: 20px;
+    vertical-align: top;
+    margin-right: 20px;
+    line-height: 50px;    /* if you want it vertically middle of the navbar */
+}
+}
 
 header {
 
@@ -141,21 +206,7 @@ header {
 
 }
 
-.prog-descr{
-    font-family: 'Raleway', sans-serif;
-    color: #2a2a2a;
-    display: grid;
-    grid-area: h2;
-    font-size: 0.8em;
-    font-weight:400;
-    justify-content: center;
-    padding-top: 3em;
-    padding-bottom: 2em;
-    padding-left: 280px;
-    padding-right: 280px;
 
-
-}
 
 section {
         margin: 30px 30px 30px;
@@ -184,7 +235,14 @@ article {
 		grid-template-columns: repeat(1, 1fr);
 		/* grid-template-columns: repeat(auto-fill, 200px); */
 		grid-auto-rows: 1fr;
+        background-color: white;
 
+
+}
+
+.teach-p {
+    font-size: 0.8em;
+    text-align: justify;
 
 }
 
@@ -193,4 +251,4 @@ article {
         padding-bottom: 70px;
     }
 
-}
+
