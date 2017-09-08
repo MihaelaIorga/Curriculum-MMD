@@ -18,14 +18,17 @@ body {
 }
 
 
-
+.t-icon {
+    max-width: 50px;
+}
 
 
 
 .left-btn {
-        background-color: white;
-    color: #0E7DFF;
-    border-radius: 1em;
+        background: white;
+
+    color: #2c2c2c;
+    border-radius: 0.8em;
     font-size: 0.8em;
     font-weight: 100;
     border: none;
@@ -49,10 +52,10 @@ body {
 
 .extra-info{
     font-family: 'Raleway', sans-serif;
-    color: #0E7DFF;
+    color: #2c2c2c;
     grid-column: 1 / -1;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 30px;
 
 }
 
@@ -68,7 +71,6 @@ body {
 
 .text1 {
         background-color: none;
-		height: 300px;
 
 
 }
@@ -77,6 +79,8 @@ h3{
     color: #2c2c2c;
     font-size: 1em;
     text-align: justify;
+    align-content: center;
+    font-weight: 600;
 }
 
 p{
@@ -89,6 +93,7 @@ footer{
         height: 100px;
     grid-area: ft;
        padding-top: 50px;
+    margin-top: 30px;
 
 
 }
@@ -97,7 +102,7 @@ footer a{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: white;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 200;
     display: block;
     align-content: center;
@@ -115,7 +120,7 @@ footer a{
     color: #2a2a2a;
     display: grid;
     grid-area: h2;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight:400;
     justify-content: center;
     padding-top: 3em;
@@ -160,7 +165,7 @@ footer a{
     color: #2a2a2a;
     display: grid;
     grid-area: h2;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight:400;
     justify-content: center;
     padding-top: 3em;
@@ -176,7 +181,7 @@ footer a{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: #2a2a2a;
-    font-size: 0.8em;
+    font-size: 1em;
     display: inline-block;
     padding-right: 20px;
     vertical-align: top;
@@ -212,15 +217,20 @@ section {
         margin: 30px 30px 30px;
             border-radius: .5em;
 		height: 35vh;
-        background-color: #0E7DFF;
+
+        background-color: #f7f7f7;
 		/* grid-template-columns: repeat(auto-fill, 200px); */
 		justify-content: center;
 
 		}
 
+.semester {
+background-image: url(images/header2.jpg);
+}
+
 article {
     font-family: 'Raleway', sans-serif;
-        color: aliceblue;
+        color: #fff;
         display: grid;
         align-content: center;
         justify-content: center;
@@ -241,7 +251,7 @@ article {
 }
 
 .teach-p {
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: justify;
 
 }
