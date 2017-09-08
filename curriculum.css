@@ -45,6 +45,9 @@ body {
 
 }
 
+.study-prog {
+  display: grid;
+}
 
 .text {
 			grid-column: 1 / -1;
@@ -217,8 +220,6 @@ section {
         margin: 30px 30px 30px;
             border-radius: .5em;
 		height: 35vh;
-
-        background-color: #f7f7f7;
 		/* grid-template-columns: repeat(auto-fill, 200px); */
 		justify-content: center;
 
