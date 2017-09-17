@@ -19,8 +19,8 @@ body {
 
 
 .t-icon {
-    max-height: 50px;
-    width: auto;
+    max-width: 50px;
+    height: auto;
 }
 
 .check {
